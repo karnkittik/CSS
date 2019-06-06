@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS How to...</title>
+
+    <link rel="stylesheet" type="text/css" href="mystyle2.css">
+    <style> 
+        h2 {
+            color:orange;
+        }
+    </style>
+    <p>If internal is before external it will be navy</p>
+    <link rel="stylesheet" type="text/css" href="mystyle2.css">
+</head>
+<body>
+    <h2>1. External Style Sheet</h2>
+    <p>link rel="stylesheet" type="text/css" href="mystyle.css"</p>
+    <p>mystyle.css<br></p>
+    <pre>body {
+        background-color: lightblue;
+      }
+      
+      h1 {
+        color: navy;
+        margin-left: 20px;
+      }</pre>
+    <h2>2. Internal Style Sheet</h2>
+    <pre>style body {
+            background-color: linen;
+        }
+        
+        h1 {
+            color: maroon;
+            margin-left: 40px;
+        }
+        /style
+    </pre>
+    <h2>Inline Styles</h2>
+    <pre>h1 style="color:blue;margin-left:30px;">This is a heading /h1</pre>
+    <h2>Cascading Order</h2>
+    <pre>All the styles in a page will "cascade" into a new "virtual" style sheet by the following rules, where number one has the highest priority:
+
+    1.Inline style (inside an HTML element)
+    2.External and internal style sheets (in the head section)
+    3.Browser default
+    So, an inline style has the highest priority, and will override external and internal styles and browser defaults.</pre>
+</body>
+</html>
