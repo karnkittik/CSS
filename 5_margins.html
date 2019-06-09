@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Margins</title>
+        <style>
+            p.individual {
+                margin-top: 100px;
+                margin-bottom: 100px;
+                margin-right: 150px;
+                margin-left: 0;  /*,Margin Collapse*/
+            }        
+        </style>
+    </head>
+    <body>
+        <p class="individual">Individual Sides</p>
+        <p style="margin: 25px 50px 75px 100px">Shorthand Property</p>
+        <p style="width:300; margin: auto; border: 1px solid black;">This div will be horizontally centered because it has margin: auto;</p>
+    <br><div style="border: 1px solid red; margin-left: 100px;">
+        <p style="margin-left: inherit">The inherit value</p>
+    </div>
+    </body>
+</html>
